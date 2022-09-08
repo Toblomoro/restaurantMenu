@@ -18,7 +18,8 @@ public class Menu extends AppMenu {
          new line /n/
          repeat   iteration throughout the hashmap */
 
-        System.out.println(appMethod());
+        System.out.println("\nToday's appetizer selection is:");
+        AppMenu.appMethod().forEach((key, value) -> System.out.println(key + ":" + value));
         /*System.out.println("Enter one of the following appetizers:");
         System.out.println("1 - Truffle-o Wings");
         System.out.println("2 - Brie en Brioche");
