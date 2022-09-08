@@ -4,11 +4,11 @@ import java.util.Date;
 import java.util.Scanner;
 import java.util.Set;
 
-public class Menu extends MenuItem {
+public class Menu extends AppMenu {
 
 
     public static void main(String[] args) {
-       /* String restaurantName = "Le petite bouche.";
+       String restaurantName = "Le petite bouche.";
         SimpleDateFormat formatter = new SimpleDateFormat("MM/dd/yyyy");
         Date date = new Date();
         System.out.println("Todays Menu: " + formatter.format(date));
@@ -18,7 +18,7 @@ public class Menu extends MenuItem {
          new line /n/
          repeat   iteration throughout the hashmap */
 
-        System.out.println(myMethod());
+        System.out.println(appMethod());
         /*System.out.println("Enter one of the following appetizers:");
         System.out.println("1 - Truffle-o Wings");
         System.out.println("2 - Brie en Brioche");
