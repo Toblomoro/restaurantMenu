@@ -1,12 +1,14 @@
 import java.text.SimpleDateFormat;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.Scanner;
+import java.util.Set;
 
-public class Menu {
+public class Menu extends MenuItem {
 
 
     public static void main(String[] args) {
-        String restaurantName = "Le petite bouche.";
+       /* String restaurantName = "Le petite bouche.";
         SimpleDateFormat formatter = new SimpleDateFormat("MM/dd/yyyy");
         Date date = new Date();
         System.out.println("Todays Menu: " + formatter.format(date));
@@ -15,7 +17,9 @@ public class Menu {
          item description
          new line /n/
          repeat   iteration throughout the hashmap */
-        System.out.println("Enter one of the following appetizers:");
+
+        System.out.println(myMethod());
+        /*System.out.println("Enter one of the following appetizers:");
         System.out.println("1 - Truffle-o Wings");
         System.out.println("2 - Brie en Brioche");
         System.out.println("3 - Homemade Duck Confit Toasted Raviolis");
@@ -27,7 +31,8 @@ public class Menu {
         int choiceentry = scanchoice.nextInt();
         while (choiceentry != 3) {
             if (choiceentry == 1) {
-                System.out.println(MenuItem.wings);
+                System.out.println( "Truffle-o Wings");
+                break;
             } else if (choiceentry == 2) {
                 System.out.println("Brie en Brioche");
             } else if (choiceentry == 3) {
@@ -40,7 +45,8 @@ public class Menu {
 
             }
 
-        }
+        }*/
+
     }
 
 };
