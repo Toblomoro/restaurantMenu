@@ -4,14 +4,17 @@ import java.util.Date;
 import java.util.Scanner;
 import java.util.Set;
 
-public class Menu extends AppMenu {
+public class Menu  {
 
 
     public static void main(String[] args) {
        String restaurantName = "Le petite bouche.";
         SimpleDateFormat formatter = new SimpleDateFormat("MM/dd/yyyy");
         Date date = new Date();
+        System.out.println("Menu last updated at : " + LastModified.modifiedAt());
+
         System.out.println("Todays Menu: " + formatter.format(date));
+
         System.out.println(restaurantName);
        /* item : cost
          item description
@@ -47,6 +50,13 @@ public class Menu extends AppMenu {
             }
 
         }*/
+        System.out.println("\nToday's entree selection is:");
+        entreeMenu.entreeMethod().forEach((key, value) -> System.out.println(key + ":" + value));
+
+
+
+        System.out.println("\nToday's dessert selection is:");
+        dessertMenu.dessertMethod().forEach((key, value) -> System.out.println(key + ":" + value));
 
     }
 
