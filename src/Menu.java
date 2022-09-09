@@ -11,7 +11,8 @@ public class Menu  {
        String restaurantName = "Le petite bouche.";
         SimpleDateFormat formatter = new SimpleDateFormat("MM/dd/yyyy");
         Date date = new Date();
-        System.out.println("Menu last updated at : " + LastModified.modifiedAt());
+        Date updatedDate = LastModified.modifiedAt();
+        System.out.println("Menu last updated at : " + formatter.format(updatedDate));
 
         System.out.println("Todays Menu: " + formatter.format(date));
 
